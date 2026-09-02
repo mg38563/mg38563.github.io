@@ -1,0 +1,12 @@
+schema: "classroom50/repo-config/v1"
+classroom: "pm-class"
+assignment: "css-cv"
+owner:
+  username: "mg38563"
+  id: 210105850
+  accepted_at: "2026-09-02T17:13:15Z"
+source:
+  owner: "CSCI4300-Web-Programming"
+  owner_id: 212650580
+  repo: "css-cv-template"
+  branch: "main"
