@@ -1,95 +1,209 @@
 body {
-
+  margin: 0;
   }
 
 /****************   Nav Section **********************/
 nav {
-	
+    font-family: "Kanit", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(242, 242, 242);
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0 30px;
+    color:rgb(29, 29, 108)
 }
+
 
 /***********************  Footer Section   **************************/
 footer {
-	
+  background-color: rgba(141, 172, 217, 0.424);
+	display: flex;
+  justify-content: center;
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  gap: 10px;
 }
 
 /*********** Splash Page ************************/
 header {
-
+  background-color: rgba(141, 172, 217, 0.424);
+  text-align: center;
+  margin: 0;
 }
 
 header h1 {
-  
+  margin: 0;
+  font-family: "Shrikhand", serif;
+  font-size: 45px;
+  color: rgb(29, 29, 108);
+
 }
 
 header img {
+    width: 200px;
+    height: 235px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid rgb(29, 29, 108)
 }
 
 .address {
- 
+ text-align: center;
+ background-color: #f2f2f2;
+ font-family: "Kanit", sans-serif;
+ margin: 0;
+ font-size: 17px;
+ color:rgb(29, 29, 108)
 }
 
 .tagline {
-  
+ text-align: center;
+ background-color: #f2f2f2;
+ font-family: "Kanit", sans-serif;
+ margin: 0;
+ font-size: 17px;
+ color:rgb(29, 29, 108);
+ padding: 10px, 30px, 10px, 30px;
 }
 
 /************* Sections ********************/
 hr {
-
+margin: 0;
 }
 
-section h3 {
-  
+section h2 {
+font-family: "Special Gothic Expanded One", sans-serif;
+font-size: 25px; 
+color: rgb(29, 29, 108);
+padding: 0 5px; 
 }
 
 section dl {
-  
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    padding: 0 15px; 
+    font-family: "Noto Sans SignWriting", sans-serif;
 }
 
 section ul {
-
+  margin:0;
+  font-family: "Noto Sans SignWriting", sans-serif;
 }
 
 section a {
+  text-decoration: none;
+  color: rgb(98, 163, 219);
 
 }
 
 section a:hover {
+    background-color: rgba(141, 172, 217, 0.424);
+    color: rgb(29, 29, 108);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+section h3 {
+font-family: "Special Gothic Expanded One", sans-serif;
+font-size: 25px; 
+color: rgb(29, 29, 108);
+padding: 0 5px; 
 }
 
 /**************   Projects   *****************/
+.projects-title {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 30px;
+}
 .three-col {
-	
+	  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .card img {
-
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
 }
 
 .card {
-  
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.27);
+  margin: 10px 0 30px 0;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  background-color: #f2f2f2;
+
 }
+
+.card:hover{ 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.27);
+}
+
 
 /**************   Responsiveness   *****************/
 @media (max-width: 680px) {
     nav {
-      
+      flex-direction: column;
+      align-items: center;
     }
 
     .three-col {
-      
+      grid-template-columns: 1fr;
+      justify-items: center;
     }
 }
 
 /**************   Contact Page   *****************/
 .one-col {
-
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: 0 auto;
+  font-size: 25px;
+  gap: 10px;
+}
+header p { 
+  margin: 0;
+  font-family: "Kanit", sans-serif;
+  font-size: 18px;
+  
 }
 
 input {
-  
-
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid rgb(29, 29, 108);
+    border-radius: 8px;
 }
 
 textarea {
-   
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid rgb(29, 29, 108);
+    border-radius: 8px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(29, 29, 108);
+    color: white;
+
+}
+button:hover {
+    background-color: rgb(98, 163, 219);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+
 }
