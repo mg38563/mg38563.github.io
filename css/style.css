@@ -1,96 +1,138 @@
 body {
   margin: 0;
+  background-color: rgb(242, 242, 242);
   }
 
 /****************   Nav Section **********************/
 nav {
-    font-family: "Kanit", sans-serif;
-    font-size: 20px;
+    font-family: Georgia, serif;
+    font-size: 24px;
     text-align: center;
-    background-color: rgb(242, 242, 242);
+    background-color: white;
     display: flex;
     justify-content: space-between;
     margin: 0;
     padding: 0 30px;
-    color:rgb(72, 72, 150)
+    color: rgb(29, 29, 108);
+
+}
+nav a { 
+  text-decoration: none;
+  color: rgb(88, 88, 116)
+}
+nav a:hover {
+    background-color: rgba(141, 172, 217, 0.424);
+    color: rgb(29, 29, 108);
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 
 /***********************  Footer Section   **************************/
 footer {
-  background-color: rgba(141, 172, 217, 0.424);
+  background-color: rgb(242, 242, 242);
 	display: flex;
   justify-content: center;
-  font-family: "Kanit", sans-serif;
+  font-family: Georgia, serif;
   font-size: 20px;
   gap: 10px;
 }
 
+footer a {
+  text-decoration: none;
+  color: rgb(88, 88, 116);
+}
+
 /*********** Splash Page ************************/
-header {
-  background-color: rgba(141, 172, 217, 0.424);
-  text-align: center;
-  margin: 0;
+.topbar {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px;
+    margin: 0;
 }
 
-header h1 {
-  margin: 0;
-  font-family: "Shrikhand", serif;
-  font-size: 45px;
-  color: rgb(29, 29, 108);
-
+.topbar-text {
+    max-width: 600px;
+    text-align: left;
 }
 
-header img {
-    width: 200px;
-    height: 235px;
+.topbar h1 {
+    margin: 0 0 15px 0;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 45px;
+    color: rgb(29, 29, 108);
+}
+
+.topbar img {
+    width: 220px;
+    height: 240px;
     border-radius: 50%;
     object-fit: cover;
-    border: 5px solid rgb(29, 29, 108)
+    border: 5px solid rgb(88, 88, 116);
 }
 
 .address {
- text-align: center;
- background-color: #f2f2f2;
- font-family: "Kanit", sans-serif;
- margin: 0;
- font-size: 17px;
- color:rgb(29, 29, 108)
+    text-align: left;
+    font-family: Georgia, serif;
+    margin: 0 0 15px 0;
+    font-size: 17px;
+    color: rgb(29, 29, 108);
 }
 
 .tagline {
- text-align: center;
- background-color: #f2f2f2;
- font-family: "Kanit", sans-serif;
- margin: 0;
- font-size: 17px;
- color:rgb(29, 29, 108);
- padding: 10px, 30px, 10px, 30px;
+    text-align: left;
+    font-family: Georgia, serif;
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.5;
+    color: rgb(29, 29, 108);
 }
-
 /************* Sections ********************/
 hr {
 margin: 0;
 }
 
+section {
+    background-color: white;
+    width: 85%;
+    margin: 40px auto;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
 section h2 {
-font-family: "Special Gothic Expanded One", sans-serif;
-font-size: 25px; 
-color: rgb(29, 29, 108);
-padding: 0 5px; 
+    font-family: Georgia, serif;
+    font-size: 30px;
+    color: rgb(29, 29, 108);
+    margin-top: 0;
+    padding-bottom: 12px;
+    border-bottom: 3px solid rgb(129, 145, 159, .25);
 }
 
 section dl {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 10px;
-    padding: 0 15px; 
-    font-family: "Noto Sans SignWriting", sans-serif;
+    grid-template-columns: 1fr auto;
+    row-gap: 12px;
+    column-gap: 30px;
+    font-family: "Georgia:", serif;
+    font-size: 18px;
+}
+
+
+section dd {
+    margin: 0;
+    text-align: right;
+    color: #555;
 }
 
 section ul {
   margin:0;
-  font-family: "Noto Sans SignWriting", sans-serif;
+  font-family: "Georgia:", serif;
 }
 
 section a {
@@ -106,10 +148,26 @@ section a:hover {
     border-radius: 5px;
 }
 section h3 {
-font-family: "Special Gothic Expanded One", sans-serif;
+
 font-size: 25px; 
+font-family: "Georgia:", serif;
 color: rgb(29, 29, 108);
 padding: 0 5px; 
+}
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background-color: rgba(141, 172, 217, 0.25);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-family: "Georgia:", serif;
 }
 
 /**************   Projects   *****************/
@@ -118,6 +176,7 @@ padding: 0 5px;
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 30px;
+    font-family: "Georgia:", serif;
 }
 .three-col {
 	  display: grid;
@@ -139,7 +198,7 @@ padding: 0 5px;
   padding: 10px 10px 10px 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.27);
   margin: 10px 0 30px 0;
-  font-family: "Special Gothic Expanded One", sans-serif;
+  font-family: "Georgia:", serif;
   background-color: #f2f2f2;
 
 }
@@ -163,6 +222,28 @@ padding: 0 5px;
 }
 
 /**************   Contact Page   *****************/
+
+.contact-header {
+    background-color: white;
+    text-align: center;
+    padding: 35px 20px;
+    margin: 0;
+}
+
+.contact-header h1 {
+    font-family: "Georgia:", serif;
+    font-size: 42px;
+    color: rgb(29, 29, 108);
+    margin: 0 0 10px 0;
+}
+
+.contact-header p {
+    font-family: "Georgia:", serif;
+    font-size: 20px;
+    color: rgb(29, 29, 108);
+    margin: 0;
+}
+
 .one-col {
   display: flex;
   flex-direction: column;
@@ -190,6 +271,7 @@ textarea {
     padding: 10px;
     border: 2px solid rgb(29, 29, 108);
     border-radius: 8px;
+    height: 130px;
 }
 
 button {
@@ -206,4 +288,8 @@ button:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 
 
+}
+
+section { 
+  width: 85%;
 }
